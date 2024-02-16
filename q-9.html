@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let size = parseInt(prompt("Enter array size :"))
+        let arr = [];
+
+        for (var i = 0; i < size; i++) {
+
+            arr[i] = parseInt(prompt(`Enter Element arr[${i}] :`));
+        }
+        
+        let flag = 0;
+        let search = parseInt(prompt("Enter element to search"));
+
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == search) {
+                flag = 1;
+                break;
+            }
+        }
+
+        if (flag == 1)
+            document.write(`<h2>Search Found</h2>`);
+        else
+            document.write(`<h2>Search not Found</h2>`);
+
+
+    </script>
+</body>
+
+</html>
